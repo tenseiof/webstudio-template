@@ -110,8 +110,3 @@ body {
 	color: var(--primary-white-color);
 	background-color: var(--accent-text-color);
 }
-/* .button.primary:hover,
-.button.primary:focus {
-	color: var(--accent-text-color);
-	background-color: var(--primary-white-color);
-} */
