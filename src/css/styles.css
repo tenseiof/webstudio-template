@@ -6,9 +6,14 @@
 
 /* bg color #2F303A */
 /* bg section color #F5F4FA */
+:root {
+	--primary-text-color: #757575;
+	--title-text-color: #212121;
+	--accent-text-color: #2196f3;
+}
 body {
 	background-color: #ffffff;
-	color: #757575;
+	color: var(--primary-text-color);
 }
 
 .list {
@@ -19,23 +24,63 @@ body {
 	text-decoration: none;
 }
 .logo span {
-	color: #2196f3;
+	color: var(--accent-text-color);
 }
 
-/* site-nav */
+/* Site-nav */
 
 .nav .nav-link {
-	color: #212121;
+	color: var(--title-text-color);
 }
 .nav .nav-link:hover,
 .nav .nav-link:focus {
-	color: #2196f3;
+	color: var(--accent-text-color);
 }
 
 .header-contact-list .header-contact-link {
-	color: #757575;
+	color: var(--primary-text-color);
+	text-decoration: none;
 }
 .header-contact-list .header-contact-link:hover,
 .header-contact-list .header-contact-link:focus {
-	color: #2196f3;
+	color: var(--accent-text-color);
+}
+
+/* Main */
+/* Hero */
+.hero-title {
+	color: var(--title-text-color);
+}
+
+/* Section */
+.section-title {
+	color: var(--title-text-color);
+}
+
+/* Features */
+.features-list .features-list-title {
+	color: var(--title-text-color);
+}
+
+/* Activity */
+
+/* Team */
+.team-list .team-list-title {
+	color: var(--title-text-color);
+}
+/* Footer */
+
+.footer-logo {
+	color: #ffffff;
+	text-decoration: none;
+}
+.footer-logo span {
+	color: var(--accent-text-color);
+}
+.footer-list .footer-list-link {
+	color: var(--primary-text-color);
+	text-decoration: none;
+}
+.footer-list .adress {
+	color: #ffffff;
 }
