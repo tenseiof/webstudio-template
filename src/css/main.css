@@ -10,9 +10,11 @@
 	--primary-text-color: #757575;
 	--title-text-color: #212121;
 	--accent-text-color: #2196f3;
+	--primary-white-color: #ffffff;
+	--secondary-bg-color: #f5f4fa;
 }
 body {
-	background-color: #ffffff;
+	background-color: var(--primary-white-color);
 	color: var(--primary-text-color);
 }
 
@@ -32,6 +34,9 @@ body {
 .nav .nav-link {
 	color: var(--title-text-color);
 }
+.nav .nav-link.current {
+	color: var(--accent-text-color);
+}
 .nav .nav-link:hover,
 .nav .nav-link:focus {
 	color: var(--accent-text-color);
@@ -48,11 +53,18 @@ body {
 
 /* Main */
 /* Hero */
+.hero {
+	background-color: #2f303a;
+}
 .hero-title {
-	color: var(--title-text-color);
+	color: var(--primary-white-color);
+	text-transform: uppercase;
 }
 
 /* Section */
+.section.secondary {
+	background-color: var(--secondary-bg-color);
+}
 .section-title {
 	color: var(--title-text-color);
 }
@@ -68,10 +80,13 @@ body {
 .team-list .team-list-title {
 	color: var(--title-text-color);
 }
-/* Footer */
 
+/* Footer */
+.footer {
+	background-color: #2f303a;
+}
 .footer-logo {
-	color: #ffffff;
+	color: var(--primary-white-color);
 	text-decoration: none;
 }
 .footer-logo span {
@@ -81,6 +96,22 @@ body {
 	color: var(--primary-text-color);
 	text-decoration: none;
 }
-.footer-list .adress {
-	color: #ffffff;
+.footer-list-link.adress {
+	color: var(--primary-white-color);
 }
+
+/* Button */
+.button {
+	color: var(--title-text-color);
+	background-color: var(--secondary-bg-color);
+	text-decoration: none;
+}
+.button.primary {
+	color: var(--primary-white-color);
+	background-color: var(--accent-text-color);
+}
+/* .button.primary:hover,
+.button.primary:focus {
+	color: var(--accent-text-color);
+	background-color: var(--primary-white-color);
+} */
