@@ -1,3 +1,18 @@
+/* main text color #212121 */
+/* secondart text color #757575 */
+
+/* white text #FFFFFF */
+/* accent color #2196F3 */
+
+/* bg color #2F303A */
+/* bg section color #F5F4FA */
 body {
-	background-color: lightgray;
+	background-color: #ffffff;
+	color: #757575;
 }
+
+.list {
+	list-style: none;
+}
+
+/* site-nav */
