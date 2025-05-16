@@ -14,5 +14,28 @@ body {
 .list {
 	list-style: none;
 }
+.logo {
+	color: #000000;
+	text-decoration: none;
+}
+.logo span {
+	color: #2196f3;
+}
 
 /* site-nav */
+
+.nav .nav-link {
+	color: #212121;
+}
+.nav .nav-link:hover,
+.nav .nav-link:focus {
+	color: #2196f3;
+}
+
+.header-contact-list .header-contact-link {
+	color: #757575;
+}
+.header-contact-list .header-contact-link:hover,
+.header-contact-list .header-contact-link:focus {
+	color: #2196f3;
+}
