@@ -85,11 +85,11 @@ body {
 .footer {
 	background-color: #2f303a;
 }
-.footer-logo {
+.logo.end {
 	color: var(--primary-white-color);
 	text-decoration: none;
 }
-.footer-logo span {
+.logo.end span {
 	color: var(--accent-text-color);
 }
 .footer-list .footer-list-link {
