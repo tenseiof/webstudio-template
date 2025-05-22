@@ -18,6 +18,7 @@ body {
 	color: var(--primary-text-color);
 
 	font-family: Roboto, sans-serif;
+	letter-spacing: 0.03em;
 }
 
 .list {
@@ -25,16 +26,32 @@ body {
 }
 .logo {
 	color: #000000;
+
+	font-family: Raleway, Roboto, sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 100%;
 	text-decoration: none;
 }
 .logo span {
 	color: var(--accent-text-color);
+	font-family: Raleway, Roboto, sans-serif;
+
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 100%;
 }
 
 /* Site-nav */
 
 .nav .nav-link {
 	color: var(--title-text-color);
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 100%;
+	letter-spacing: 0.02em;
+	text-decoration: none;
 }
 .nav .nav-link.current {
 	color: var(--accent-text-color);
@@ -46,6 +63,11 @@ body {
 
 .header-contact-list .header-contact-link {
 	color: var(--primary-text-color);
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 100%;
+	letter-spacing: 0.02em;
 	text-decoration: none;
 }
 .header-contact-list .header-contact-link:hover,
@@ -60,7 +82,20 @@ body {
 }
 .hero-title {
 	color: var(--primary-white-color);
+
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	letter-spacing: 0.06em;
+	text-align: center;
 	text-transform: uppercase;
+}
+.hero > .button {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+	letter-spacing: 0.06em;
+	text-align: center;
 }
 
 /* Section */
