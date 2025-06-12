@@ -36,10 +36,6 @@ body {
 .logo span {
 	color: var(--accent-text-color);
 	font-family: Raleway, Roboto, sans-serif;
-
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 100%;
 }
 
 /* Site-nav */
@@ -104,11 +100,29 @@ body {
 }
 .section-title {
 	color: var(--title-text-color);
+
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 100%;
+
+	text-align: center;
 }
 
 /* Features */
 .features-list .features-list-title {
 	color: var(--title-text-color);
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 100%;
+	text-transform: uppercase;
+}
+
+.features-list .features-list-text {
+	color: var(--primary-text-color);
+
+	font-size: 14px;
+	line-height: 1.71;
 }
 
 /* Activity */
@@ -116,6 +130,19 @@ body {
 /* Team */
 .team-list .team-list-title {
 	color: var(--title-text-color);
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 100%;
+	text-align: center;
+}
+
+.team-list .team-list-text {
+	color: var(--primary-text-color);
+
+	font-size: 16px;
+	line-height: 100%;
+	text-align: center;
 }
 
 /* Footer */
@@ -132,6 +159,7 @@ body {
 .footer-list .footer-list-link {
 	color: var(--primary-text-color);
 	text-decoration: none;
+	font-style: normal;
 }
 .footer-list-link.adress {
 	color: var(--primary-white-color);
