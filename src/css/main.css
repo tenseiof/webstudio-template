@@ -13,6 +13,14 @@
 	--primary-white-color: #ffffff;
 	--secondary-bg-color: #f5f4fa;
 }
+html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
 body {
 	background-color: var(--primary-white-color);
 	color: var(--primary-text-color);
