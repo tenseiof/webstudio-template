@@ -31,7 +31,18 @@ body {
 
 .list {
 	list-style: none;
+
+	padding: 0;
+	margin: 0;
 }
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	padding: 0px 15px 0px 15px;
+}
+
 .logo {
 	color: #000000;
 
@@ -87,6 +98,10 @@ header {
 /* Hero */
 .hero {
 	background-color: #2f303a;
+	text-align: center;
+
+	padding-top: 200px;
+	padding-bottom: 200px;
 }
 .hero-title {
 	color: var(--primary-white-color);
@@ -95,20 +110,19 @@ header {
 	font-size: 44px;
 	line-height: 1.36;
 	letter-spacing: 0.06em;
-	text-align: center;
 	text-transform: uppercase;
-}
-.hero > .button {
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1.87;
-	letter-spacing: 0.06em;
-	text-align: center;
+
+	/* padding-top: 200px; */
+	margin-top: 0;
+	margin-bottom: 30px;
 }
 
 /* Section */
 .section {
 	background-color: var(--primary-white-color);
+
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
 .section.secondary {
 	background-color: var(--secondary-bg-color);
@@ -119,8 +133,14 @@ header {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 100%;
-
 	text-align: center;
+
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.section-title.activity,
+.section-title.team {
+	margin-bottom: 50px;
 }
 
 /* Features */
@@ -131,15 +151,22 @@ header {
 	font-size: 14px;
 	line-height: 100%;
 	text-transform: uppercase;
+
+	margin-top: 0;
+	margin-bottom: 17.46px;
 }
 
 .features-list .features-list-text {
 	font-size: 14px;
 	line-height: 1.71;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 /* Activity */
-
+.activity-title {
+	margin-bottom: 50px;
+}
 /* Team */
 .team-list .team-list-title {
 	color: var(--title-text-color);
@@ -148,17 +175,26 @@ header {
 	font-size: 16px;
 	line-height: 100%;
 	text-align: center;
+
+	margin-bottom: 10px;
+	margin-top: 0;
 }
 
 .team-list .team-list-text {
 	font-size: 16px;
 	line-height: 100%;
 	text-align: center;
+
+	margin-bottom: 0;
+	margin-top: 0;
 }
 
 /* Footer */
 .footer {
 	background-color: #2f303a;
+
+	padding-bottom: 60px;
+	padding-top: 60px;
 }
 .logo.end {
 	color: var(--primary-white-color);
@@ -186,8 +222,24 @@ header {
 .button {
 	color: var(--title-text-color);
 	background-color: var(--secondary-bg-color);
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+	letter-spacing: 0.06em;
+	vertical-align: middle;
 	text-decoration: none;
+	text-align: center;
+
+	display: inline-block;
+	border-radius: 4px;
+	padding: 10px 32px;
+	min-width: 216px;
+	min-height: 50px;
 }
+/* .block {
+	padding-bottom: 200px;
+} */
 .button.primary {
 	color: var(--primary-white-color);
 	background-color: var(--accent-text-color);
