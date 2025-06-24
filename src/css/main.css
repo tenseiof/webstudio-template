@@ -63,6 +63,16 @@ header {
 	background-color: var(--primary-white-color);
 }
 
+.nav-list {
+	display: flex;
+}
+.nav-list .nav-item {
+	margin-right: 50px;
+}
+.nav-list .nav-item:last-child {
+	margin-right: 0;
+}
+
 .nav .nav-link {
 	color: var(--title-text-color);
 
@@ -102,6 +112,7 @@ header {
 
 	padding-top: 200px;
 	padding-bottom: 200px;
+	margin-bottom: 94px;
 }
 .hero-title {
 	color: var(--primary-white-color);
@@ -123,6 +134,10 @@ header {
 
 	padding-top: 94px;
 	padding-bottom: 94px;
+}
+.section.no-padding {
+	padding-top: 0;
+	padding-bottom: 0;
 }
 .section.secondary {
 	background-color: var(--secondary-bg-color);
