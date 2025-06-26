@@ -61,6 +61,7 @@ body {
 
 header {
 	background-color: var(--primary-white-color);
+	border: 1px solid #ececec;
 }
 
 .nav {
@@ -146,8 +147,11 @@ header {
 	text-transform: uppercase;
 
 	/* padding-top: 200px; */
+	width: 696px;
 	margin-top: 0;
 	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Section */
@@ -273,12 +277,12 @@ header {
 .logo.end {
 	color: var(--primary-white-color);
 	text-decoration: none;
-
-	display: block;
-	margin-bottom: 20px;
 }
 .logo.end span {
 	color: var(--accent-text-color);
+}
+.footer-list {
+	margin-top: 20px;
 }
 .footer-list .footer-list-item:not(:last-child) {
 	margin-bottom: 9px;
@@ -317,9 +321,7 @@ header {
 	min-width: 216px;
 	min-height: 50px;
 }
-/* .block {
-	padding-bottom: 200px;
-} */
+
 .button.primary {
 	color: var(--primary-white-color);
 	background-color: var(--accent-text-color);
