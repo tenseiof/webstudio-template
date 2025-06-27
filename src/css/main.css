@@ -28,6 +28,11 @@ body {
 	font-family: Roboto, sans-serif;
 	letter-spacing: 0.03em;
 }
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
 
 .list {
 	padding: 0;
@@ -223,9 +228,6 @@ header {
 .activity-list .activity-list-item:not(:last-child) {
 	margin-right: 30px;
 }
-.activity-list-item img {
-	display: block;
-}
 
 /* Team */
 .team-list {
@@ -249,12 +251,7 @@ header {
 	text-align: center;
 
 	margin-bottom: 10px;
-	margin-top: 0;
-}
-
-.team-list-item img {
-	display: block;
-	margin-bottom: 30px;
+	margin-top: 30px;
 }
 
 .team-list .team-list-text {
