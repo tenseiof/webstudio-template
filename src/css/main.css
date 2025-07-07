@@ -356,29 +356,25 @@ header {
 	display: inline-block;
 	width: 44px;
 	height: 44px;
+	padding: 12px;
 	border-radius: 50%;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 20px;
 	transition: background-color 0.3s ease, background-image 0.3s ease;
 }
+.team-link-icon {
+	width: 20px;
+	height: 20px;
+}
+.social-icon {
+	fill: #afb1b8;
+}
+.team-social-link:hover .social-icon {
+	fill: #ffffff;
+}
 .team-social-link:hover {
 	background-color: var(--accent-text-color);
-}
-
-.team-social-link.instagram {
-	background-image: url(../images/member/instagram.svg);
-}
-.team-social-link.twitter {
-	background-image: url(../images/member/twitter.svg);
-}
-
-.team-social-link.facebook {
-	background-image: url(../images/member/facebook.svg);
-}
-
-.team-social-link.linkedin {
-	background-image: url(../images/member/linkedin.svg);
 }
 
 /* Footer */
