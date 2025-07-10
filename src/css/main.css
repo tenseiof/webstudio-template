@@ -12,6 +12,7 @@
 	--accent-text-color: #2196f3;
 	--primary-white-color: #ffffff;
 	--secondary-bg-color: #f5f4fa;
+	--primary-svg-color: #afb1b8;
 }
 html {
 	box-sizing: border-box;
@@ -219,7 +220,8 @@ header {
 	margin-bottom: 0;
 }
 .section-title.activity,
-.section-title.team {
+.section-title.team,
+.section-title.clients {
 	margin-bottom: 50px;
 }
 
@@ -351,7 +353,7 @@ header {
 	transition: background-color 0.3s ease, background-image 0.3s ease;
 }
 .team-link-icon {
-	fill: #afb1b8;
+	fill: var(--primary-svg-color);
 }
 .team-social-link:hover .team-link-icon {
 	fill: var(--primary-white-color);
@@ -361,18 +363,22 @@ header {
 }
 
 /* Clients */
-
-/* Features */
 .clients-list {
 	display: flex;
 }
-
 .clients-list .clients-list-item {
 	min-width: 170px;
-	min-height: 92px;
-	margin-right: 30px;
+	max-height: 92px;
+	padding: 16px 32px;
 
-	border: 1px solid #afb1b8;
+	border: 1px solid var(--primary-svg-color);
+	border-radius: 4px;
+}
+.clients-list .clients-list-item:not(:last-child) {
+	margin-right: 30px;
+}
+.clients-list-logo {
+	width: 106px;
 }
 /* Footer */
 .footer {
