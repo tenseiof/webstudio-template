@@ -1,5 +1,5 @@
 /* main text color #212121 */
-/* secondart text color #757575 */
+/* secondary text color #757575 */
 
 /* white text #FFFFFF */
 /* accent color #2196F3 */
@@ -110,27 +110,32 @@ header {
 	display: flex;
 	margin-left: auto;
 }
-
+.header-contact-item {
+	justify-content: center;
+}
+.header-contact-link {
+	display: flex;
+}
+.header-item-icon {
+	margin-right: 10px;
+	fill: #000000;
+}
 .header-contact-list .header-contact-item:before {
-	content: '';
 	display: inline-flex;
 	vertical-align: middle;
 	width: 16px;
 	height: 16px;
 	margin-right: 5px;
-
-	background-position: center;
-	background-repeat: no-repeat;
 }
-.header-contact-item:first-child:before {
+
+/* .header-contact-item:first-child:before {
 	background-image: url(../images/contact/envelope.svg);
 	background-size: 16px 12px;
-	/* align-self: center; */
-}
-.header-contact-item:last-child:before {
+} */
+/* .header-contact-item:last-child:before {
 	background-image: url(../images/contact/smartphone.svg);
 	background-size: 10px 16px;
-}
+} */
 
 .header-contact-list .header-contact-item:not(:last-child) {
 	margin-right: 50px;
@@ -354,6 +359,7 @@ header {
 }
 .team-link-icon {
 	fill: var(--primary-svg-color);
+	transition: fill 0.3s ease;
 }
 .team-social-link:hover .team-link-icon {
 	fill: var(--primary-white-color);
@@ -373,12 +379,23 @@ header {
 
 	border: 1px solid var(--primary-svg-color);
 	border-radius: 4px;
+	transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 .clients-list .clients-list-item:not(:last-child) {
 	margin-right: 30px;
 }
 .clients-list-logo {
-	width: 106px;
+	fill: var(--primary-svg-color);
+	transition: fill 0.3s ease;
+}
+
+.clients-list .clients-list-item:hover,
+.clients-list-item:hover .clients-list-logo {
+	border-color: var(--accent-text-color);
+	fill: var(--accent-text-color);
+	transform: scale(1.02);
+	transition: border-color 0.3s ease, background-color 0.3s ease,
+		transform 0.3s ease;
 }
 /* Footer */
 .footer {
@@ -413,6 +430,25 @@ header {
 
 	font-size: 14px;
 	line-height: 1.71;
+}
+.footer-social-link {
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	padding: 12px;
+	border-radius: 50%;
+	background: #43444d;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 20px;
+	transition: background-color 0.3s ease, background-image 0.3s ease;
+}
+.footer-link-icon {
+	fill: var(--primary-white-color);
+	transition: fill 0.3s ease;
+}
+.footer-social-link:hover {
+	background-color: var(--accent-text-color);
 }
 
 /* Button */
