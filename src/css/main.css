@@ -110,9 +110,7 @@ header {
 	display: flex;
 	margin-left: auto;
 }
-.header-contact-item {
-	justify-content: center;
-}
+
 .header-contact-link {
 	display: flex;
 }
@@ -120,13 +118,13 @@ header {
 	margin-right: 10px;
 	fill: #000000;
 }
-.header-contact-list .header-contact-item:before {
+/* .header-contact-list .header-contact-item:before {
 	display: inline-flex;
 	vertical-align: middle;
 	width: 16px;
 	height: 16px;
 	margin-right: 5px;
-}
+} */
 
 /* .header-contact-item:first-child:before {
 	background-image: url(../images/contact/envelope.svg);
