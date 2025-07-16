@@ -13,6 +13,7 @@
 	--secondary-bg-color: #f5f4fa;
 	--transition-duration: 250ms;
 	--transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	--bg-overlay: #2196f3e5;
 }
 html {
 	box-sizing: border-box;
@@ -178,7 +179,6 @@ header {
 .portfolio-list > .portfolio-list-item:nth-child(-n + 6) {
 	margin-bottom: 30px;
 }
-
 .portfolio-list-title {
 	color: var(--title-text-color);
 
@@ -195,6 +195,36 @@ header {
 	line-height: 1.87;
 
 	margin: 0px;
+}
+
+.img-thumb {
+	position: relative;
+	overflow: hidden;
+}
+.img-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateY(101%);
+	opacity: 0;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+	width: 100%;
+	height: 100%;
+	padding: 63px 24px;
+	background: var(--bg-overlay);
+}
+
+.img-thumb-text {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.55;
+	margin: 0;
+
+	color: var(--primary-white-color);
+}
+.portfolio-list-item:hover .img-overlay {
+	opacity: 1;
+	transform: translateY(0);
 }
 /* Section */
 .section {
