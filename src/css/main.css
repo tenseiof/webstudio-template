@@ -554,15 +554,19 @@ header {
 	padding: 6px;
 	background-color: var(--primary-white-color);
 	cursor: pointer;
+	transition: all 0.3s ease;
 
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 }
 .close-btn-icon {
 	fill: var(--primary-svg-color);
+	transition: fill 0.3s ease;
 }
-.btn-close:hover,
+
 .btn-close:hover .close-btn-icon {
 	fill: var(--primary-white-color);
+}
+.btn-close:hover {
 	background-color: var(--accent-text-color);
 }
