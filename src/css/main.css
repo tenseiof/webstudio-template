@@ -511,10 +511,10 @@ header {
 		var(--transition-timing-function);
 	background-color: rgba(0, 0, 0, 0.5);
 }
-/* .backdrop.is-hidden {
+.backdrop.is-hidden {
 	opacity: 0;
 	pointer-events: none;
-} */
+}
 .modal {
 	position: absolute;
 	top: 50%;
