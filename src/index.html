@@ -544,8 +544,62 @@
 						/>
 					</svg>
 				</button>
+				<p class="modal-title">Залиште свої дані, ми вам прередзвонимо</p>
+				<form>
+					<div class="field-wrapper">
+						<div class="field">
+							<label for="field-input" class="field-label">Ім'я</label>
+							<input
+								type="text"
+								class="field-input"
+								id="field-input"
+								name="username"
+							/>
+						</div>
+						<div class="field">
+							<label for="field-input" class="field-label">Телефон</label>
+							<input
+								type="tel"
+								class="field-input"
+								id="field-phone"
+								name="phone"
+							/>
+						</div>
+						<div class="field">
+							<label for="field-input" class="field-label">Пошта</label>
+							<input
+								type="mail"
+								class="field-input"
+								id="field-mail"
+								name="mail"
+							/>
+						</div>
+						<div class="field">
+							<label for="field-input" class="field-label">Коментар</label>
+							<textarea
+								class="field-input textarea"
+								id="field-textarea"
+								name="comment"
+								placeholder="Введіть текст"
+							></textarea>
+						</div>
+					</div>
+					<div class="modal-checkbox-wrapper">
+						<input
+							type="checkbox"
+							class="modal-checkbox"
+							id="modal-checkbox"
+							name="agreement"
+							value="yes"
+						/>
+						<label class="modal-checkbox-label" for="modal-checkbox"
+							>Погоджуюся з розсилкою та приймаю
+							<a class="modal-link" href="">Умови договору</a>
+						</label>
+					</div>
+					<button type="submit" class="modal-button-submit">Відправити</button>
+				</form>
 			</div>
-			<form></form>
 		</div>
 		<script src="./js/modal.js"></script>
 	</body>
