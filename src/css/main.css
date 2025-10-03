@@ -364,11 +364,14 @@ header {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 20px;
-	transition: background-color 0.3s ease, background-image 0.3s ease;
+	transition: background-color var(--transition-duration)
+			var(--transition-timing-function),
+		background-image var(--transition-duration)
+			var(--transition-timing-function);
 }
 .team-link-icon {
 	fill: var(--primary-svg-color);
-	transition: fill 0.3s ease;
+	transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 .team-social-link:hover .team-link-icon,
 .team-social-link:focus .team-link-icon {
@@ -390,14 +393,18 @@ header {
 
 	border: 1px solid var(--primary-svg-color);
 	border-radius: 4px;
-	transition: border-color 0.3s ease, background-color 0.3s ease;
+	transition: border-color var(--transition-duration)
+			var(--transition-timing-function),
+		background-color var(--transition-duration)
+			var(--transition-timing-function),
+		transform var(--transition-duration) var(--transition-timing-function);
 }
 .clients-list .clients-list-item:not(:last-child) {
 	margin-right: 30px;
 }
 .clients-list-logo {
 	fill: var(--primary-svg-color);
-	transition: fill 0.3s ease;
+	transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
 .clients-list .clients-list-item:hover,
@@ -405,8 +412,6 @@ header {
 	border-color: var(--accent-text-color);
 	fill: var(--accent-text-color);
 	transform: scale(1.02);
-	transition: border-color 0.3s ease, background-color 0.3s ease,
-		transform 0.3s ease;
 }
 
 /* Footer */
@@ -415,6 +420,9 @@ header {
 
 	padding-bottom: 60px;
 	padding-top: 60px;
+}
+.footer-container {
+	display: flex;
 }
 .logo.end {
 	color: var(--primary-white-color);
@@ -433,15 +441,21 @@ header {
 	color: var(--primary-white-color) 60%;
 	text-decoration: none;
 	font-style: normal;
-
 	font-size: 14px;
-	line-height: 1.71;
+	line-height: 1;
+
+	transition: color var(--transition-duration) var(--transition-timing-function);
 }
+
 .footer-list-link.adress {
 	color: var(--primary-white-color);
 
 	font-size: 14px;
 	line-height: 1.71;
+}
+.footer-list-link:hover,
+.footer-list-link:focus {
+	color: var(--accent-text-color);
 }
 .footer-social-link {
 	display: inline-flex;
@@ -453,7 +467,10 @@ header {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 20px;
-	transition: background-color 0.3s ease, background-image 0.3s ease;
+	transition: background-color var(--transition-duration)
+			var(--transition-timing-function),
+		background-image var(--transition-duration)
+			var(--transition-timing-function);
 }
 .footer-title {
 	font-weight: 700;
@@ -461,6 +478,7 @@ header {
 	line-height: 100%;
 	text-transform: uppercase;
 	margin-bottom: 20px;
+	margin-top: 10px;
 
 	color: var(--primary-white-color);
 }
@@ -470,11 +488,57 @@ header {
 }
 .footer-link-icon {
 	fill: var(--primary-white-color);
-	transition: fill 0.3s ease;
+	transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
 	background-color: var(--accent-text-color);
+}
+.adress-container {
+	margin-right: 70px;
+	min-width: 231px;
+}
+.socials-footer {
+	margin-right: 93px;
+}
+.subscribe-tittle {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 100%;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	margin-top: 10px;
+
+	color: var(--primary-white-color);
+}
+.subscribe-form {
+	display: flex;
+	align-items: center;
+}
+.subscribe-form-field {
+	min-width: 358px;
+	height: 50px;
+	color: rgba(255, 255, 255, 0.6);
+	filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
+	padding: 16px 15px;
+	font-size: 16px;
+	line-height: 1.25;
+	margin-right: 12px;
+
+	box-shadow: 0px 4px 4px 0px #00000026;
+}
+.subscribe-submit {
+	position: relative;
+}
+.plane-logo {
+	position: absolute;
+	top: 13px;
+	right: 27px;
+
+	fill: var(--primary-white-color);
 }
 
 /* Button */
@@ -500,6 +564,27 @@ header {
 .button.primary {
 	color: var(--primary-white-color);
 	background-color: var(--accent-text-color);
+}
+
+.button.subscribe {
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+	letter-spacing: 0.06em;
+
+	min-width: 200px;
+	text-align: start;
+	vertical-align: middle;
+	cursor: pointer;
+	border: none;
+
+	box-shadow: 0px 4px 4px 0px #00000026;
+	transition: background-color var(--transition-duration)
+		var(--transition-timing-function);
+}
+.button.subscribe:hover {
+	background-color: #1e88e5;
 }
 
 /* Backdrop */
@@ -528,6 +613,7 @@ header {
 	transform: translate(-50%, -50%) scale(0.9);
 }
 
+/* Modal */
 .modal {
 	position: absolute;
 	top: 50%;
@@ -551,6 +637,8 @@ header {
 .btn-close {
 	position: absolute;
 	top: 8px;
+	fill: #757575;
+	transition: fill var(--transition-duration) var(--transition-timing-function);
 	right: 8px;
 
 	display: inline-flex;
@@ -561,14 +649,14 @@ header {
 	padding: 6px;
 	background-color: var(--primary-white-color);
 	cursor: pointer;
-	transition: all 0.3s ease;
+	transition: all var(--transition-duration) var(--transition-timing-function);
 
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 }
 .close-btn-icon {
-	fill: var(--primary-svg-color);
-	transition: fill 0.3s ease;
+	fill: var(--title-text-color);
+	transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
 .btn-close:hover .close-btn-icon {
@@ -597,6 +685,7 @@ header {
 }
 
 .field {
+	position: relative;
 	display: inline-flex;
 	flex-direction: column;
 
@@ -674,7 +763,8 @@ header {
 	opacity: 1;
 	border-radius: 4px;
 	border: 1px solid var(--accent-text-color);
-
+	box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
+		0px 1px 3px 0px #0000001f;
 	cursor: pointer;
 }
 
@@ -682,4 +772,20 @@ header {
 .modal-button-submit:focus {
 	background-color: #1e88e5;
 	border: 1px solid #1e88e5;
+}
+
+.person-icon,
+.mail-icon,
+.phone-icon {
+	position: absolute;
+	top: 28.5px;
+	left: 12px;
+}
+
+.field svg {
+	fill: var(--title-text-color);
+	transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+.field:focus-within svg {
+	fill: var(--accent-text-color);
 }

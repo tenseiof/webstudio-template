@@ -263,6 +263,9 @@ header {
 	padding-bottom: 60px;
 	padding-top: 60px;
 }
+.footer-container {
+	display: flex;
+}
 .logo.end {
 	color: var(--primary-white-color);
 	text-decoration: none;
@@ -280,15 +283,21 @@ header {
 	color: var(--primary-white-color) 60%;
 	text-decoration: none;
 	font-style: normal;
-
 	font-size: 14px;
-	line-height: 1.71;
+	line-height: 1;
+
+	transition: color var(--transition-duration) var(--transition-timing-function);
 }
+
 .footer-list-link.adress {
 	color: var(--primary-white-color);
 
 	font-size: 14px;
 	line-height: 1.71;
+}
+.footer-list-link:hover,
+.footer-list-link:focus {
+	color: var(--accent-text-color);
 }
 .footer-social-link {
 	display: inline-flex;
@@ -300,7 +309,10 @@ header {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 20px;
-	transition: background-color 0.3s ease, background-image 0.3s ease;
+	transition: background-color var(--transition-duration)
+			var(--transition-timing-function),
+		background-image var(--transition-duration)
+			var(--transition-timing-function);
 }
 .footer-title {
 	font-weight: 700;
@@ -308,6 +320,7 @@ header {
 	line-height: 100%;
 	text-transform: uppercase;
 	margin-bottom: 20px;
+	margin-top: 10px;
 
 	color: var(--primary-white-color);
 }
@@ -317,10 +330,56 @@ header {
 }
 .footer-link-icon {
 	fill: var(--primary-white-color);
-	transition: fill 0.3s ease;
+	transition: fill var(--transition-duration) var(--transition-timing-function);
 }
-.footer-social-link:hover {
+.footer-social-link:hover,
+.footer-social-link:focus {
 	background-color: var(--accent-text-color);
+}
+.adress-container {
+	margin-right: 70px;
+	min-width: 231px;
+}
+.socials-footer {
+	margin-right: 93px;
+}
+.subscribe-tittle {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 100%;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	margin-top: 10px;
+
+	color: var(--primary-white-color);
+}
+.subscribe-form {
+	display: flex;
+	align-items: center;
+}
+.subscribe-form-field {
+	min-width: 358px;
+	height: 50px;
+	color: rgba(255, 255, 255, 0.6);
+	filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
+	padding: 16px 15px;
+	font-size: 16px;
+	line-height: 1.25;
+	margin-right: 12px;
+	box-shadow: 0px 4px 4px 0px #00000026;
+}
+.subscribe-submit {
+	position: relative;
+}
+.plane-logo {
+	position: absolute;
+	top: 13px;
+	right: 27px;
+
+	fill: var(--primary-white-color);
 }
 
 /* Button */
@@ -363,4 +422,27 @@ header {
 .button.primary:focus {
 	color: var(--title-text-color);
 	background-color: var(--secondary-bg-color);
+}
+
+.button.subscribe {
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+	letter-spacing: 0.06em;
+
+	min-width: 200px;
+	height: 50px;
+	text-align: start;
+	vertical-align: middle;
+	cursor: pointer;
+	border: none;
+
+	box-shadow: 0px 4px 4px 0px #00000026;
+
+	transition: background-color var(--transition-duration)
+		var(--transition-timing-function);
+}
+.button.subscribe:hover {
+	background-color: #1e88e5;
 }
