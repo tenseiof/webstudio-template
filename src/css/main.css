@@ -720,6 +720,7 @@ header {
 }
 
 .modal-checkbox-wrapper {
+	position: relative;
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
@@ -731,6 +732,29 @@ header {
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
+}
+
+.modal-checkbox {
+	appearance: none;
+}
+.checkbox-icon {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	transform: translateY(-50%);
+	width: 16px;
+	height: 15px;
+	border: 2px solid black;
+	border-radius: 2px;
+	margin-right: 10px;
+}
+
+.modal-checkbox:checked + .checkbox-icon {
+	background-color: var(--accent-text-color);
+	background: url('../images/modal/checkbox.svg');
+	background-size: contain;
+	background-origin: border-box;
 }
 
 .modal-link {
