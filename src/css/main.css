@@ -737,24 +737,28 @@ header {
 .modal-checkbox {
 	appearance: none;
 }
+
 .checkbox-icon {
 	display: inline-block;
-	position: absolute;
-	top: 50%;
-	left: 20px;
-	transform: translateY(-50%);
 	width: 16px;
 	height: 15px;
 	border: 2px solid black;
 	border-radius: 2px;
-	margin-right: 10px;
+	margin-right: 8px;
+	vertical-align: middle;
+	transition: background-color var(--transition-duration)
+			var(--transition-timing-function),
+		border-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .modal-checkbox:checked + .checkbox-icon {
 	background-color: var(--accent-text-color);
-	background: url('../images/modal/checkbox.svg');
+	background-image: url('../images/modal/checkbox.svg');
+	background-repeat: no-repeat;
+	background-position: center;
 	background-size: contain;
 	background-origin: border-box;
+	border-color: var(--accent-text-color);
 }
 
 .modal-link {
