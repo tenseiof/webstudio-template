@@ -588,7 +588,12 @@ header {
 	background-color: #1e88e5;
 }
 
-/* Backdrop lect*/
+/* Backdrop */
+
+body.modal-open {
+	overflow: hidden;
+	overscroll-behavior: none;
+}
 
 .backdrop {
 	position: fixed;
@@ -624,6 +629,7 @@ header {
 	min-width: 528px;
 	min-height: 581px;
 	padding: 40px;
+
 	opacity: 1;
 	border-radius: 4px;
 	background-color: var(--primary-white-color);
