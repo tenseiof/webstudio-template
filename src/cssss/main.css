@@ -605,11 +605,11 @@ img {
 
 /* Backdrop */
 
-body.modal-open {
+/* body.modal-open {
 	overflow: hidden;
 	overscroll-behavior: none;
-}
-
+} */
+/* 
 .backdrop {
 	position: fixed;
 	top: 0;
@@ -632,7 +632,7 @@ body.modal-open {
 
 .backdrop.is-hidden .modal {
 	transform: translate(-50%, -50%) scale(0.9);
-}
+} */
 
 /* Modal */
 .modal {
