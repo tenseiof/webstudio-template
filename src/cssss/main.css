@@ -416,10 +416,6 @@ img {
 .clients-list .clients-list-item:not(:last-child) {
 	margin-right: 30px;
 }
-.clients-list-logo {
-	fill: var(--primary-svg-color);
-	transition: fill var(--transition-duration) var(--transition-timing-function);
-}
 
 .clients-list .clients-list-item:hover,
 .clients-list-item:hover .clients-list-logo {
@@ -428,6 +424,10 @@ img {
 	transform: scale(1.02);
 }
 
+.clients-list-logo {
+	fill: var(--primary-svg-color);
+	transition: fill var(--transition-duration) var(--transition-timing-function);
+}
 /* Footer */
 .footer {
 	background-color: #2f303a;
