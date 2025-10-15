@@ -40,3 +40,34 @@
 		background-color: #1e88e5;
 	}
 }
+
+.btn-close {
+	position: absolute;
+	top: 8px;
+	fill: #757575;
+	transition: fill var(--transition-duration) var(--transition-timing-function);
+	right: 8px;
+
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	padding: 6px;
+	background-color: var(--primary-white-color);
+	cursor: pointer;
+	transition: all var(--transition-duration) var(--transition-timing-function);
+
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+	&:hover .btn-close-icon {
+		fill: var(--primary-white-color);
+	}
+	&:hover {
+		background-color: var(--accent-text-color);
+	}
+}
+.btn-close-icon {
+	fill: var(--title-text-color);
+	transition: fill var(--transition-duration) var(--transition-timing-function);
+}
