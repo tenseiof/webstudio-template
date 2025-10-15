@@ -1,0 +1,41 @@
+header {
+	background-color: var(--primary-white-color);
+	border: 1px solid #ececec;
+}
+
+.header-contact-list {
+	display: flex;
+	margin-left: auto;
+	align-items: center;
+	& .header-contact-item:not(:last-child) {
+		margin-right: 50px;
+	}
+	& .header-contact-link {
+		color: var(--primary-text-color);
+
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 100%;
+		letter-spacing: 0.02em;
+		text-decoration: none;
+	}
+	& .header-contact-link:hover,
+	.header-contact-link:focus {
+		color: var(--accent-text-color);
+		fill: var(--accent-text-color);
+	}
+}
+
+.header-contact-link {
+	display: flex;
+	align-items: center;
+	&:hover .header-item-icon {
+		color: var(--accent-text-color);
+		fill: var(--accent-text-color);
+	}
+}
+
+.header-item-icon {
+	margin-right: 10px;
+	fill: currentColor;
+}

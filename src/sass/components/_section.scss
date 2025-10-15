@@ -1,0 +1,30 @@
+.section {
+	background-color: var(--primary-white-color);
+
+	padding-top: 94px;
+	padding-bottom: 94px;
+	&.no-padding {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	&.secondary {
+		background-color: var(--secondary-bg-color);
+	}
+}
+
+.section-title {
+	color: var(--title-text-color);
+
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 100%;
+	text-align: center;
+
+	margin-top: 0;
+	margin-bottom: 0;
+	&.activity,
+	.team,
+	.clients {
+		margin-bottom: 50px;
+	}
+}
