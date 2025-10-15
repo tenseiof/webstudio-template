@@ -635,7 +635,7 @@ img {
 } */
 
 /* Modal */
-.modal {
+/* .modal {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -842,4 +842,4 @@ img {
 }
 .field:focus-within svg {
 	fill: var(--accent-text-color);
-}
+} */

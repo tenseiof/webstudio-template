@@ -101,8 +101,8 @@ address {
 	margin-bottom: 0;
 }
 .section-title.activity,
-.section-title .team,
-.section-title .clients {
+.section-title.team,
+.section-title.clients {
 	margin-bottom: 50px;
 }
 
