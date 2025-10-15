@@ -676,12 +676,12 @@ img {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 }
-.close-btn-icon {
+.btn-close-icon {
 	fill: var(--title-text-color);
 	transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
-.btn-close:hover .close-btn-icon {
+.btn-close:hover .btn-close-icon {
 	fill: var(--primary-white-color);
 }
 .btn-close:hover {
