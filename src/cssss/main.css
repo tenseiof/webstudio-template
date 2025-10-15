@@ -230,7 +230,7 @@ img {
 } */
 
 /* Features */
-.features-list {
+/* .features-list {
 	display: flex;
 }
 
@@ -281,9 +281,9 @@ img {
 	line-height: 1.71;
 	margin-top: 0;
 	margin-bottom: 0;
-}
+} */
 
-/* Activity */
+/* Activity
 .activity-title {
 	margin-bottom: 50px;
 }
@@ -318,10 +318,10 @@ img {
 	font-weight: 700;
 	line-height: 1.14;
 	margin: 0;
-}
+} */
 
 /* Team */
-.team-list {
+/* .team-list {
 	display: flex;
 }
 .team-list .team-list-item {
@@ -369,7 +369,6 @@ img {
 	margin: 0;
 }
 
-/* svg sprite */
 .team-social-link {
 	display: inline-block;
 	width: 44px;
@@ -384,10 +383,6 @@ img {
 		background-image var(--transition-duration)
 			var(--transition-timing-function);
 }
-.team-link-icon {
-	fill: var(--primary-svg-color);
-	transition: fill var(--transition-duration) var(--transition-timing-function);
-}
 .team-social-link:hover .team-link-icon,
 .team-social-link:focus .team-link-icon {
 	fill: var(--primary-white-color);
@@ -396,6 +391,10 @@ img {
 .team-social-link:focus {
 	background-color: var(--accent-text-color);
 }
+.team-link-icon {
+	fill: var(--primary-svg-color);
+	transition: fill var(--transition-duration) var(--transition-timing-function);
+} */
 
 /* Clients */
 .clients-list {
