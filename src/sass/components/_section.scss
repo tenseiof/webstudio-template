@@ -23,8 +23,8 @@
 	margin-top: 0;
 	margin-bottom: 0;
 	&.activity,
-	.team,
-	.clients {
+	&.team,
+	&.clients {
 		margin-bottom: 50px;
 	}
 }

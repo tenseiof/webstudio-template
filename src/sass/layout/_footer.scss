@@ -33,7 +33,7 @@
 		line-height: 1.71;
 	}
 	&:hover,
-	:focus {
+	&:focus {
 		color: var(--accent-text-color);
 	}
 }
@@ -53,7 +53,7 @@
 		background-image var(--transition-duration)
 			var(--transition-timing-function);
 	&:hover,
-	:focus {
+	&:focus {
 		background-color: var(--accent-text-color);
 	}
 }

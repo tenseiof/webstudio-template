@@ -20,7 +20,7 @@ header {
 		text-decoration: none;
 	}
 	& .header-contact-link:hover,
-	.header-contact-link:focus {
+	& .header-contact-link:focus {
 		color: var(--accent-text-color);
 		fill: var(--accent-text-color);
 	}
