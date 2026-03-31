@@ -159,8 +159,8 @@ address {
 .container {
 	margin-left: auto;
 	margin-right: auto;
-
 	padding: 0px 15px 0px 15px;
+
 	@media screen and (min-width: 480px) {
 		width: 480px;
 	}
@@ -251,10 +251,11 @@ address {
 	opacity: 1;
 	border-radius: 4px;
 	background-color: var(--primary-white-color);
-	transition: transform var(--transition-duration)
-			var(--transition-timing-function),
+	transition:
+		transform var(--transition-duration) var(--transition-timing-function),
 		opacity var(--transition-duration) var(--transition-timing-function);
-	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+	box-shadow:
+		0px 2px 1px 0px rgba(0, 0, 0, 0.2),
 		0px 1px 1px 0px rgba(0, 0, 0, 0.1411764706),
 		0px 1px 3px 0px rgba(0, 0, 0, 0.1215686275);
 }
@@ -311,7 +312,8 @@ address {
 	border-radius: 2px;
 	margin-right: 8px;
 	vertical-align: middle;
-	transition: background-color var(--transition-duration)
+	transition:
+		background-color var(--transition-duration)
 			var(--transition-timing-function),
 		border-color var(--transition-duration) var(--transition-timing-function);
 }
@@ -332,7 +334,8 @@ address {
 	line-height: 1.87;
 	letter-spacing: 0.06em;
 	text-align: center;
-	transition: background-color var(--transition-duration)
+	transition:
+		background-color var(--transition-duration)
 			var(--transition-timing-function),
 		border-color var(--transition-duration) var(--transition-timing-function);
 	color: var(--primary-white-color);
@@ -344,7 +347,8 @@ address {
 	opacity: 1;
 	border-radius: 4px;
 	border: 1px solid var(--accent-text-color);
-	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+	box-shadow:
+		0px 2px 1px 0px rgba(0, 0, 0, 0.2),
 		0px 1px 1px 0px rgba(0, 0, 0, 0.1411764706),
 		0px 1px 3px 0px rgba(0, 0, 0, 0.1215686275);
 	cursor: pointer;
@@ -497,8 +501,8 @@ address {
 .clients-list .clients-list-item {
 	border: 1px solid var(--primary-svg-color);
 	border-radius: 4px;
-	transition: border-color var(--transition-duration)
-			var(--transition-timing-function),
+	transition:
+		border-color var(--transition-duration) var(--transition-timing-function),
 		transform var(--transition-duration) var(--transition-timing-function);
 }
 .clients-list-item {
@@ -668,7 +672,8 @@ address {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 20px;
-	transition: background-color var(--transition-duration)
+	transition:
+		background-color var(--transition-duration)
 			var(--transition-timing-function),
 		background-image var(--transition-duration)
 			var(--transition-timing-function);
@@ -792,11 +797,8 @@ header {
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #2f303a;
-	background-image: linear-gradient(
-			to right,
-			rgba(47, 48, 58, 0.4),
-			rgba(47, 48, 58, 0.4)
-		),
+	background-image:
+		linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 		url(../images/hero/herobg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -825,7 +827,8 @@ header {
 	background-color: var(--primary-white-color);
 	border-bottom-left-radius: 4px;
 	border-bottom-right-radius: 4px;
-	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+	box-shadow:
+		0px 2px 1px 0px rgba(0, 0, 0, 0.2),
 		0px 1px 1px 0px rgba(0, 0, 0, 0.1411764706),
 		0px 1px 3px 0px rgba(0, 0, 0, 0.1215686275);
 }
@@ -869,7 +872,8 @@ header {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 20px;
-	transition: background-color var(--transition-duration)
+	transition:
+		background-color var(--transition-duration)
 			var(--transition-timing-function),
 		background-image var(--transition-duration)
 			var(--transition-timing-function);
@@ -902,13 +906,15 @@ header {
 	flex-wrap: wrap;
 }
 .portfolio-list .portfolio-list-item {
-	transition: background-color var(--transition-duration)
+	transition:
+		background-color var(--transition-duration)
 			var(--transition-timing-function),
 		color var(--transition-duration) var(--transition-timing-function),
 		box-shadow var(--transition-duration) var(--transition-timing-function);
 }
 .portfolio-list .portfolio-list-item:hover {
-	box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.1607843137),
+	box-shadow:
+		1px 4px 6px 0px rgba(0, 0, 0, 0.1607843137),
 		0px 4px 4px 0px rgba(0, 0, 0, 0.0588235294),
 		0px 1px 1px 0px rgba(0, 0, 0, 0.1215686275);
 }
@@ -953,7 +959,9 @@ header {
 	left: 0;
 	transform: translateY(101%);
 	opacity: 0;
-	transition: transform 0.3s ease, opacity 0.3s ease;
+	transition:
+		transform 0.3s ease,
+		opacity 0.3s ease;
 	width: 100%;
 	height: 100%;
 	padding: 63px 24px;
@@ -987,7 +995,8 @@ header {
 	padding: 6px 22px;
 	min-height: 38px;
 	min-width: 73px;
-	transition: background-color var(--transition-duration)
+	transition:
+		background-color var(--transition-duration)
 			var(--transition-timing-function),
 		color var(--transition-duration) var(--transition-timing-function),
 		box-shadow var(--transition-duration) var(--transition-timing-function);
@@ -996,14 +1005,16 @@ header {
 .button-portfolio:focus {
 	color: var(--primary-white-color);
 	background-color: var(--accent-text-color);
-	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1215686275),
+	box-shadow:
+		0px 2px 2px 0px rgba(0, 0, 0, 0.1215686275),
 		0px 1px 2px 0px rgba(0, 0, 0, 0.0784313725),
 		0px 3px 1px 0px rgba(0, 0, 0, 0.1019607843);
 }
 .button-portfolio.primary {
 	color: var(--primary-white-color);
 	background-color: var(--accent-text-color);
-	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1215686275),
+	box-shadow:
+		0px 2px 2px 0px rgba(0, 0, 0, 0.1215686275),
 		0px 1px 2px 0px rgba(0, 0, 0, 0.0784313725),
 		0px 3px 1px 0px rgba(0, 0, 0, 0.1019607843);
 }
