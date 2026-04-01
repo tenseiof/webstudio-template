@@ -368,12 +368,13 @@ address {
 }
 
 .nav {
-	/* display: flex; */
+	display: flex;
 	align-items: center;
-	justify-content: flex-start;
+	margin-right: auto;
 }
 
 .nav-list {
+	display: none;
 	/* display: flex; */
 	margin-left: 93px;
 }
@@ -832,11 +833,32 @@ address {
 }
 
 header {
+	position: relative;
+	min-height: 60px;
+
 	background-color: var(--primary-white-color);
 	border: 1px solid #ececec;
 }
 
+.header-container {
+	display: flex;
+	align-items: center;
+}
+.header-menu-button {
+	transition: color var(--transition-duration) var(--transition-timing-function);
+	background-color: rgba(0, 0, 0, 5);
+	border: none;
+	margin-left: auto;
+	padding: 0;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+.header-icon {
+	align-items: center;
+}
 .header-contact-list {
+	display: none;
 	/* display: flex; */
 	margin-left: auto;
 	align-items: center;
