@@ -834,7 +834,7 @@ address {
 
 header {
 	position: relative;
-	min-height: 60px;
+	// min-height: 60px;
 
 	background-color: var(--primary-white-color);
 	border: 1px solid #ececec;
@@ -843,10 +843,11 @@ header {
 .header-container {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 .header-menu-button {
 	transition: color var(--transition-duration) var(--transition-timing-function);
-	background-color: rgba(0, 0, 0, 5);
+	background-color: rgba(192, 20, 20, 5);
 	border: none;
 	margin-left: auto;
 	padding: 0;
@@ -854,7 +855,7 @@ header {
 	justify-content: center;
 	align-items: center;
 }
-.header-icon {
+.header-menu-icon {
 	align-items: center;
 }
 .header-contact-list {
