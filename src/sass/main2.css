@@ -381,8 +381,12 @@ address {
 
 .nav-list {
   display: none;
-  /* display: flex; */
   margin-left: 93px;
+}
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: flex;
+  }
 }
 
 .nav-list .nav-item:not(:last-child) {
@@ -903,32 +907,81 @@ header {
   color: var(--accent-text-color);
   fill: var(--accent-text-color);
 }
+@media screen and (min-width: 768px) {
+  .header-menu-button {
+    display: none;
+  }
+}
 
 .menu-icon {
   display: block;
 }
 
 .menu-container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary-white-color);
+  padding: 48px 40px;
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  width: 100%;
-  height: 400px;
-  background-color: palegoldenrod;
-  padding: 20px;
-  text-align: center;
-  font-size: 20px;
 }
-.menu-container.is-open {
-  display: block;
+.menu-container .mobile-menu-nav {
+  margin-bottom: auto;
+}
+@media screen and (max-width: 767px) {
+  .menu-container.is-open {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+.mobile-menu-link {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+.mobile-menu-link.current {
+  color: var(--accent-text-color);
+}
+
+.mobile-menu-contacts-link {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.mobile-menu-contacts-link.accent {
+  font-size: 34px;
+  color: var(--accent-text-color);
+}
+
+.mobile-menu-socials-link {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: var(--accent-text-color);
 }
 
 .header-contact-list {
   display: none;
-  /* display: flex; */
   margin-left: auto;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .header-contact-list {
+    display: flex;
+  }
 }
 
 .header-contact-list .header-contact-item:not(:last-child) {
@@ -942,6 +995,8 @@ header {
   line-height: 100%;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-contact-list .header-contact-link:hover,
@@ -951,7 +1006,7 @@ header {
 }
 
 .header-contact-link {
-  /* display: flex; */
+  display: flex;
   align-items: center;
 }
 

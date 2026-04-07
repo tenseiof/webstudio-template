@@ -66,7 +66,7 @@
 					class="header-menu-button"
 					type="button"
 					aria-expanded="false"
-					aria-controls="header-menu"
+					aria-controls="menu-container"
 					data-menu-button
 				>
 					<svg
@@ -90,7 +90,55 @@
 						/>
 					</svg>
 				</button>
-				<div class="menu-container" data-menu>Контентш меню</div>
+				<div class="menu-container" id="menu-container" data-menu>
+					<div class="mobile-menu">
+						<nav class="mobile-menu-nav" id="mobile-menu">
+							<ul class="list mobile-menu-list">
+								<li class="mobile-menu-item">
+									<a href="index.html" class="link mobile-menu-link current"
+										>Студія</a
+									>
+								</li>
+								<li class="mobile-menu-item">
+									<a href="./portfolio.html" class="link mobile-menu-link"
+										>Портфоліо</a
+									>
+								</li>
+								<li class="mobile-menu-item">
+									<a href="#" class="link mobile-menu-link">Контакти</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="mobile-menu-contacts">
+						<ul class="mobile-menu-contacts-list">
+							<li class="mobile-menu-contacts-item">
+								<a href="" class="accent mobile-menu-contacts-link"
+									>+38 096 111 11 11</a
+								>
+							</li>
+							<li class="mobile-menu-contacts-item">
+								<a href="" class="mobile-menu-contacts-link"
+									>info@devstudio.com</a
+								>
+							</li>
+						</ul>
+						<ul class="mobile-menu-socials-list">
+							<li class="mobile-menu-socials-item">
+								<a href="" class="mobile-menu-socials-link">Instagram</a>
+							</li>
+							<li class="mobile-menu--socials-item">
+								<a href="" class="mobile-menu-socials-link">Twitter</a>
+							</li>
+							<li class="mobile-menu-socials-item">
+								<a href="" class="mobile-menu-socials-link">Facebook</a>
+							</li>
+							<li class="mobile-menu-socials-item">
+								<a href="" class="mobile-menu-socials-link">LinkedIn</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</header>
 		<main class="main">
