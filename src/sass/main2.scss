@@ -244,12 +244,7 @@ address {
 }
 
 .modal {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%) scale(1);
-	min-width: 528px;
-	min-height: 581px;
+	position: relative;
 	padding: 40px;
 	opacity: 1;
 	border-radius: 4px;
@@ -261,6 +256,19 @@ address {
 		0px 2px 1px 0px rgba(0, 0, 0, 0.2),
 		0px 1px 1px 0px rgba(0, 0, 0, 0.1411764706),
 		0px 1px 3px 0px rgba(0, 0, 0, 0.1215686275);
+	@media screen and (max-width: 479px) {
+		max-width: 450px;
+	}
+	@media screen and (min-width: 480px) {
+		width: 450px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(1);
+	}
+	@media screen and (min-width: 1200px) {
+		width: 528px;
+	}
 }
 
 .modal-title {
