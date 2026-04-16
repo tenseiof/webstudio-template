@@ -475,8 +475,11 @@ address {
 	margin-bottom: 50px;
 }
 
-.activity-list .activity-list-item:not(:last-child) {
-	margin-right: 30px;
+.activity-list {
+	display: flex;
+	& .activity-list-item:not(:last-child) {
+		margin-right: 30px;
+	}
 }
 
 .activity-list-item {
@@ -487,9 +490,9 @@ address {
 	position: absolute;
 	bottom: 0;
 	left: 0;
+	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* display: flex; */
 	width: 100%;
 	height: 70px;
 	background-color: rgba(47, 48, 58, 0.8);
