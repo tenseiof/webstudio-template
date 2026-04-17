@@ -145,11 +145,11 @@ address {
 	border-radius: 50%;
 }
 .btn-close:hover .btn-close-icon {
-	fill: var(--primary-white-color);
+	fill: var(--accent-text-color);
 }
-.btn-close:hover {
-	background-color: var(--accent-text-color);
-}
+// .btn-close:hover {
+// 	background-color: var(--accent-text-color);
+// }
 
 .btn-close-icon {
 	display: block;

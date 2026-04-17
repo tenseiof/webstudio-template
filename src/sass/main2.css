@@ -149,11 +149,7 @@ address {
 }
 
 .btn-close:hover .btn-close-icon {
-  fill: var(--primary-white-color);
-}
-
-.btn-close:hover {
-  background-color: var(--accent-text-color);
+  fill: var(--accent-text-color);
 }
 
 .btn-close-icon {
