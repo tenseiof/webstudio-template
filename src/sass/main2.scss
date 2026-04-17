@@ -147,9 +147,6 @@ address {
 .btn-close:hover .btn-close-icon {
 	fill: var(--accent-text-color);
 }
-// .btn-close:hover {
-// 	background-color: var(--accent-text-color);
-// }
 
 .btn-close-icon {
 	display: block;
@@ -947,6 +944,8 @@ header {
 	font-size: 40px;
 	letter-spacing: 0.02em;
 	color: var(--title-text-color);
+	transition: color var(--transition-duration) var(--transition-timing-function);
+
 	&.current {
 		color: var(--accent-text-color);
 	}
@@ -967,6 +966,7 @@ header {
 	font-size: 18px;
 	letter-spacing: 0.02em;
 	color: var(--primary-text-color);
+	transition: color var(--transition-duration) var(--transition-timing-function);
 	&.accent {
 		font-size: 34px;
 		color: var(--accent-text-color);

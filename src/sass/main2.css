@@ -973,6 +973,7 @@ header {
   font-size: 40px;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 .mobile-menu-link.current {
   color: var(--accent-text-color);
@@ -995,6 +996,7 @@ header {
   font-size: 18px;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 .mobile-menu-contacts-link.accent {
   font-size: 34px;
