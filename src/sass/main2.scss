@@ -90,7 +90,7 @@ address {
 	align-items: center;
 	border-radius: 4px;
 	padding: 10px 32px;
-	min-width: 200px;
+	min-width: 150px;
 	height: 50px;
 	color: var(--title-text-color);
 	background-color: var(--secondary-bg-color);
@@ -112,7 +112,7 @@ address {
 	font-size: 16px;
 	line-height: 1.87;
 	letter-spacing: 0.06em;
-	max-width: 200px;
+	min-width: 150px;
 	gap: 10px;
 	text-align: start;
 	vertical-align: middle;
@@ -456,6 +456,7 @@ address {
 .section-title {
 	color: var(--title-text-color);
 	font-weight: 700;
+	font-size: 28px;
 	font-size: 36px;
 	line-height: 100%;
 	text-align: center;
@@ -468,6 +469,7 @@ address {
 	margin-bottom: 50px;
 	@media screen and (max-width: 1199px) {
 		margin-bottom: 30px;
+		font-size: 28px;
 	}
 }
 
@@ -1083,11 +1085,17 @@ header {
 	line-height: 1.36;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-	/* width: 696px; */
+	max-width: 360px;
 	margin-top: 0;
 	margin-bottom: 30px;
 	margin-left: auto;
 	margin-right: auto;
+	@media screen and (max-width: 1199px) {
+		font-size: 26px;
+	}
+	@media screen and (min-width: 1200px) {
+		max-width: 696px;
+	}
 }
 
 .team-list {
