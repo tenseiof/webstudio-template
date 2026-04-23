@@ -1317,6 +1317,11 @@ header {
     width: calc(50% - 15px);
   }
 }
+@media screen and (min-width: 1200px) {
+  .portfolio-list .portfolio-list-item {
+    width: calc(33.3333% - 20px);
+  }
+}
 .portfolio-list .portfolio-list-item {
   transition: background-color var(--transition-duration) var(--transition-timing-function), color var(--transition-duration) var(--transition-timing-function), box-shadow var(--transition-duration) var(--transition-timing-function);
 }
@@ -1325,7 +1330,7 @@ header {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.1607843137), 0px 4px 4px 0px rgba(0, 0, 0, 0.0588235294), 0px 1px 1px 0px rgba(0, 0, 0, 0.1215686275);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-list-item:first-child .text-container {
     padding-bottom: 56px;
   }
